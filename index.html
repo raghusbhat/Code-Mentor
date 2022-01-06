@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Code Mentor">
+    <meta name="description" content="HTML, CSS, JavaScript Template for Saas">
+    <meta name="keywords" content="Frontend, UI/UX, Web Design">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Raghu.Bhat">
+    <title>Landing Page</title>
+    <link rel="icon" href="/favicon.png" sizes="any" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tailwind.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+
+</head>
+<body>
+  <div class="scrollContainer"> 
+    <div class=" text-purple-600 antialiased container mx-auto">
+        <!-- Navbar -->
+        <header>
+
+            <nav class="flex flex-wrap justify-between items-center px-2 shadow-sm lg:shadow-none bg-white lg:bg-opacity-0 py-1 nav" >
+          
+              <!--  logo -->
+              <div class="cursor-pointer" id="logo">
+                <a href="#" aria-label="Logo">
+                    <svg width="50" height="59" viewBox="0 0 50 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M48.9211 23.6895C48.715 23.3294 48.4386 23.0146 48.1083 22.7637C47.778 22.5128 47.4005 22.331 46.9984 22.2291C45.2138 21.7883 43.3653 21.6658 41.5381 21.8672C42.0189 19.2084 41.8493 16.4728 41.0437 13.8937C40.8063 13.1584 40.3044 12.5374 39.6352 12.1511C38.966 11.7648 38.1772 11.6406 37.4217 11.8027C35.6107 12.2032 33.8824 12.913 32.3129 13.9012C31.0596 11.2631 29.1954 8.96179 26.8748 7.18828C26.3347 6.78087 25.6765 6.56048 25 6.56048C24.3235 6.56048 23.6653 6.78087 23.1252 7.18828C20.8046 8.96179 18.9404 11.2631 17.6871 13.9012C16.1176 12.9131 14.3894 12.2032 12.5785 11.8027C11.8229 11.6403 11.034 11.7644 10.3647 12.1508C9.69535 12.5372 9.19343 13.1584 8.95625 13.8939C8.15067 16.4729 7.98113 19.2085 8.46211 21.8672C6.6348 21.6658 4.78628 21.7884 3.00156 22.2293C2.60011 22.3326 2.2233 22.5149 1.89318 22.7656C1.56306 23.0163 1.28626 23.3304 1.07899 23.6894C0.871728 24.0483 0.738153 24.4451 0.686089 24.8563C0.634025 25.2676 0.664518 25.6851 0.775783 26.0844C1.46699 28.5557 3.58203 33.2533 9.98242 36.9488C16.3432 40.6209 21.9643 40.625 24.9896 40.625L24.9984 40.6254H25.0016L25.0104 40.625C28.0357 40.625 33.6568 40.6209 40.0176 36.9486C46.418 33.2533 48.5332 28.5557 49.2242 26.0844C49.337 25.6852 49.3683 25.2675 49.3163 24.856C49.2642 24.4445 49.1298 24.0477 48.9211 23.6893V23.6895ZM38.0715 14.859C38.6066 16.5064 39.1301 19.4535 38.0125 23.251C37.9889 23.3154 37.9695 23.3813 37.9545 23.4482C37.4944 24.9197 36.8692 26.3344 36.0908 27.6652C35.1449 29.2948 34.0046 30.8036 32.6951 32.1584C33.6848 29.8273 34.375 26.9455 34.375 23.4375C34.389 21.219 34.0806 19.0103 33.4594 16.8805C34.8523 15.9161 36.4184 15.2297 38.0715 14.859V14.859ZM25.0055 9.69277C26.883 11.0941 31.25 15.2389 31.25 23.4375C31.25 31.7465 26.818 35.8578 25 37.1947C23.182 35.8578 18.75 31.7465 18.75 23.4375C18.75 15.2389 23.117 11.0941 25.0055 9.69277V9.69277ZM11.9283 14.8594C13.5815 15.2298 15.1475 15.9161 16.5404 16.8805C15.9193 19.0103 15.6109 21.219 15.625 23.4375C15.625 26.9453 16.3152 29.8273 17.3047 32.1584C15.9952 30.8036 14.8551 29.2948 13.9092 27.6652C13.1299 26.3331 12.5042 24.9169 12.0439 23.4438C12.0299 23.382 12.0121 23.3212 11.9906 23.2617C10.8689 19.459 11.393 16.508 11.9281 14.8594H11.9283ZM3.77774 25.2563C5.5937 24.8208 7.48225 24.7822 9.31445 25.1434C9.8148 26.5609 10.4471 27.9283 11.2029 29.2277C12.8851 32.1162 15.0886 34.6674 17.7016 36.752C15.542 36.2077 13.4695 35.3628 11.5449 34.2422C6.10488 31.1012 4.34824 27.2555 3.77774 25.2559V25.2563ZM38.4551 34.2422C36.5305 35.3628 34.4581 36.2077 32.2986 36.752C34.9115 34.6674 37.115 32.1162 38.7971 29.2277C39.553 27.9284 40.1852 26.5609 40.6855 25.1434C42.5149 24.785 44.3995 24.819 46.2148 25.243C45.6518 27.2557 43.8951 31.1014 38.4551 34.2422V34.2422Z" fill="#9333EA"/>
+                        <path d="M9.12 53.18H13.865V55H6.78V45.9H9.12V53.18ZM20.628 48.37C20.628 47.85 20.368 47.59 19.848 47.59H17.638C17.118 47.59 16.858 47.85 16.858 48.37V52.53C16.858 53.05 17.118 53.31 17.638 53.31H19.848C20.368 53.31 20.628 53.05 20.628 52.53V48.37ZM22.968 52.53C22.968 53.44 22.76 54.103 22.344 54.519C21.9367 54.9263 21.278 55.13 20.368 55.13H17.118C16.208 55.13 15.545 54.9263 15.129 54.519C14.7217 54.103 14.518 53.44 14.518 52.53V48.37C14.518 47.46 14.7217 46.8013 15.129 46.394C15.545 45.978 16.208 45.77 17.118 45.77H20.368C21.278 45.77 21.9367 45.978 22.344 46.394C22.76 46.8013 22.968 47.46 22.968 48.37V52.53ZM32.0741 54.805C30.0461 55.0217 28.1828 55.13 26.4841 55.13C25.6348 55.13 25.0108 54.9307 24.6121 54.532C24.2135 54.1333 24.0141 53.5093 24.0141 52.66V48.5C24.0141 47.59 24.2178 46.9313 24.6251 46.524C25.0411 46.108 25.7041 45.9 26.6141 45.9H31.2941V47.72H27.1341C26.6141 47.72 26.3541 47.98 26.3541 48.5V52.66C26.3541 52.8593 26.4105 53.0197 26.5231 53.141C26.6445 53.2537 26.8048 53.31 27.0041 53.31C28.0008 53.31 28.9108 53.2883 29.7341 53.245V51.36H28.0441V49.8H32.0741V54.805ZM39.2267 48.37C39.2267 47.85 38.9667 47.59 38.4467 47.59H36.2367C35.7167 47.59 35.4567 47.85 35.4567 48.37V52.53C35.4567 53.05 35.7167 53.31 36.2367 53.31H38.4467C38.9667 53.31 39.2267 53.05 39.2267 52.53V48.37ZM41.5667 52.53C41.5667 53.44 41.3587 54.103 40.9427 54.519C40.5353 54.9263 39.8767 55.13 38.9667 55.13H35.7167C34.8067 55.13 34.1437 54.9263 33.7277 54.519C33.3203 54.103 33.1167 53.44 33.1167 52.53V48.37C33.1167 47.46 33.3203 46.8013 33.7277 46.394C34.1437 45.978 34.8067 45.77 35.7167 45.77H38.9667C39.8767 45.77 40.5353 45.978 40.9427 46.394C41.3587 46.8013 41.5667 47.46 41.5667 48.37V52.53Z" fill="#9333EA"/>
+                        </svg>
+                </a>
+              </div>
+          
+                <!--  Button for animated hamburger lottie  -->
+              <button id="hamburger_btn" class="h-12 w-12 md:hidden">
+              </button>
+
+              <!--  Menu -->
+              <ul class="w-full h-0 bg-purple-50 border border-purple-100 shadow-inner  -mt-36 md:mt-2 flex flex-col md:flex-row md:w-auto md:h-auto transition-all ease-in-out duration-500 font-medium text-lg rounded-md md:shadow m-2 p-3 transform hover:shadow-lg hover:scale-105 " id="menu">
+                <li class="-mt-28 md:my-0 md:mx-1 transition-all ease-in-out duration-700 rounded-md py-2 md:px-2 hover:bg-purple-600 hover:text-white hover:shadow-xl" id="menuItem"><a href="#">Home</a></li>
+                <li class="-mt-28 md:my-0 md:mx-1 transition-all ease-in-out duration-700 rounded-md py-2 md:px-2 hover:bg-purple-600 hover:text-white hover:shadow-xl" id="menuItem"><a href="#">Pricing</a></li>
+                <li class="-mt-28 md:my-0 md:mx-1 transition-all ease-in-out duration-700 rounded-md py-2 md:px-2 hover:bg-purple-600 hover:text-white hover:shadow-xl" id="menuItem"><a href="#">About</a></li>
+                <li class="-mt-28 md:my-0 md:mx-1 transition-all ease-in-out duration-700 rounded-md py-2 md:px-2 md:border md:border-purple-600 md:text-purple-600 hover:bg-purple-600 hover:border-none hover:text-white  hover:shadow-xl" id="menuItem"><a href="#">Contact</a></li>
+              </ul>
+          
+            </nav>
+          </header>
+
+        <!-- Hero section -->
+        <section class="mt-5 lg:mt-10">
+
+          <div class="flex justify-around items-center flex-wrap">
+
+            <div class="hero_card mx-2 flex flex-col items-center xl:items-start justify-between text-center bg-white shadow  p-3 xl:py-20 xl:px-10 rounded transform transition-all delay-150 hover:shadow-md" id="hero_card">
+      
+              <h1 class="hero_heading text-xl md:text-3xl break-words whitespace-normal" id="hero_txt">Learn coding from working IT professionals.</h1>
+              <p class="hero_desc mt-1 italic text-sm md:text-lg" id="hero_desc">Learn from experts in the field. Get to know insider knowledge.</p>
+              
+              <button class="hero_button bg-purple-600 text-white md:text-xl px-4 py-2 mt-4 rounded-md flex justify-around items-center tracking-wide transform transition-all ease-in-out duration-500 shadow-purple-700 hover:bg-purple-800 hover:shadow-lg"  id="hero_button">Know More 
+                <svg xmlns="http://www.w3.org/2000/svg" id="cta_arrow" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </button> 
+            </div>
+          
+            <div class="flex max-w-xl justify-center items-center relative h-96 w-96" id="hero">
+              
+              <svg class="absolute justify-self-center" id="bg_blob" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M424 299C410 331.667 389.167 357.333 361.5 376C333.833 394.667 304.167 406.833 272.5 412.5C240.833 418.167 202.167 423.667 156.5 429C110.833 434.333 75.8334 417.333 51.5 378C27.1667 338.667 18.5 297 25.5 253C32.5 209 48.5 170.833 73.5 138.5C98.5 106.167 128.833 79.5 164.5 58.5C200.167 37.5 239.667 28.3334 283 31C326.333 33.6667 357 54.6667 375 94C393 133.333 409.167 169.167 423.5 201.5C437.833 233.833 438 266.333 424 299Z" fill="#d0b6f2"/>
+                </svg>
+                <img class="absolute" src="/girl.png" alt="" id="girl_hero"> 
+            </div>
+          </div>
+
+        </section>
+
+        <!-- "How does it work?" section -->
+        <section class="mt-10 lg:mt-32">
+          <h1 class="text-center text-lg md:text-2xl" id="how_does_it_work">How does it work?</h1>
+            
+          <div class="bg-purple-100 grid gap-4 grid-flow-row md:grid-flow-col p-5 m-2 items-center border border-purple-200 rounded-md  shadow-sm" id="work_section">
+
+            <div class="tech flex flex-col justify-center items-center border border-dashed border-purple-400 rounded-md bg-purple-50 hover:border-solid hover:drop-shadow-lg transition-all transform duration-200  ease-in-out" id="tech_card">
+              <div class="text-2xl font-bold my-2">.01</div>
+              <div class="h-36 w-32 rounded-full border-2 border-purple-400 border-dashed bg-white flex items-center">
+                <dotlottie-player class="p-5" autoplay loop mode="normal" src="./choose.lottie"></dotlottie-player>
+              </div> 
+              <h2 class="mt-2 font-bold" >Choose technology stack.</h2>
+              <p class="italic pb-3" >100+ Techonologies.</p>
+            </div>
+
+                    
+            <div class="mentor flex flex-col justify-center items-center border border-dashed border-purple-400 rounded-md bg-purple-50 hover:border-solid hover:drop-shadow-lg transition-all transform duration-200  ease-in-out" id="match_card">
+              <div class="text-2xl font-bold my-2">.02</div>
+              <div class="h-36 w-32 rounded-full border-2 border-purple-400 border-dashed bg-white flex items-center">
+                <dotlottie-player class="p-1"  autoplay loop mode="normal" src="./mentor.lottie"></dotlottie-player>
+              </div> 
+              <h2 class="mt-2 font-bold" >Match with the best mentors.</h2>
+              <p class="italic pb-3" >2500+ Mentors.</p>
+            </div>
+
+          
+            <div class="success flex flex-col justify-center items-center border border-dashed border-purple-400 rounded-md bg-purple-50 hover:border-solid hover:drop-shadow-lg transition-all transform duration-200  ease-in-out" id="success_card">
+              <div class="text-2xl font-bold my-2">.03</div>
+              <div class="h-36 w-32 rounded-full border-2 border-purple-400 border-dashed bg-white flex items-center">
+                <dotlottie-player class="h-36 w-36 " autoplay loop mode="normal" src="./choose2.lottie">choose2</dotlottie-player>
+              </div> 
+              <h2 class="mt-2 font-bold" >Learn and be a success!</h2>
+              <p class="italic pb-3" >8000+ happy coders.</p>
+            </div>
+    
+          </div>
+        </section>
+
+        <!-- "Programming Languages" -->
+        <section class="mt-10 lg:mt-32">  
+          <h1 class="text-center text-lg md:text-2xl p-2" id="programming_heading">What programming languages do you cover?</h1>
+          <div class="bg-purple-100 p-5 m-2 rounded-t-md border border-purple-200 shadow-sm" id="program_div">
+            <div class="grid gap-4 md:grid-flow-col grid-cols-2 md:grid-cols-5 md:grid-rows-2 place-content-center place-items-center ">
+            
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/html.png" alt="">
+                <p class="text-purple-400 mt-1">HTML</p>
+              </div>
+              
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/javascript.png" alt="">
+                <p class="text-purple-400 mt-1">JAVASCRIPT</p>
+              </div>
+            
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/css-3.png" alt="">
+                <p class="text-purple-400 mt-1">CSS</p>
+              </div>
+              
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/java.png" alt="">
+                <p class="text-purple-400 mt-1">JAVA</p>
+              </div>
+            
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/c.png" alt="">
+                <p class="text-purple-400 mt-1">C++</p>
+              </div>
+      
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/python.png" alt="">
+                <p class="text-purple-400 mt-1">PYTHON</p>
+              </div>
+      
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/Ruby.png" alt="">
+                <p class="text-purple-400 mt-1">RUBY</p>
+              </div>
+          
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/php.png" alt="">
+                <p class="text-purple-400 mt-1">PHP</p>
+              </div>
+            
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/android.png" alt="">
+                <p class="text-purple-400 mt-1">ANDRIOD</p>
+              </div>
+      
+              <div class="flex flex-col justify-center items-center pgm">
+                <img  class="p-2 rounded-full bg-purple-50 border border-dashed border-purple-400 pgm_icons hover:shadow-md" src="/swift.png" alt="">
+                <p class="text-purple-400 mt-1">SWIFT</p>
+              </div>
+            
+            </div> 
+
+            <h1 class="text-center italic text-purple-600 mt-10">And much more..</h1>
+          </div>
+
+
+        </section>
+
+        <!-- testimonial carousel  -->
+        <section class="mt-10 md:mt-32">
+
+        <h1 class="text-center text-lg md:text-2xl" id="testimonial_header">Hear from our users</h1>
+        <div class="p-5 m-2 relative rounded-t-sm bg-purple-100 border border-purple-200 rounded-md  shadow-sm h-96 flex justify-center items-center " id="testimonial_div">
+          
+          <div class="absolute hidden opacity-0 flex-col bg-purple-50 justify-center items-center m-2 p-3 border border-purple-200 rounded-md shadow-sm transition-all ease-in-out duration-500" id="slides">
+            <img class="rounded-full border-4 border-white shadow" src="https://i.pravatar.cc/100?img=26" alt="">
+            <div class="flex flex-row mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-lg font-semibold my-2">Anna.P</p>
+            <p class="text-center italic max-w-2xl">"Vipul is a very available mentor. He was very responsive to my requests and never hesitated to get involved by fixing some tricky coding stuff."</p>
+          </div>
+          
+                
+          <div class="absolute hidden opacity-0 flex-col bg-purple-50 justify-center items-center m-2 p-3 border border-purple-200 rounded-md shadow-sm transition-all ease-in-out duration-500" id="slides"> 
+            <img class="rounded-full border-4 border-white shadow" src="https://i.pravatar.cc/100?img=51" alt="">
+            <div class="flex flex-row mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-lg font-semibold my-2">Dave.L</p>
+            <p class="text-center italic max-w-2xl">"They have the best mentors for their courses. I enrolled in Javascript basics and later, completed advanced Javascript programming. This helped me secure a decent job!"</p>
+          </div>
+
+
+          <div class="absolute hidden opacity-0 flex-col  bg-purple-50 justify-center items-center m-2 p-3 border border-purple-200 rounded-md shadow-sm transition-all ease-in-out duration-500" id="slides">
+            <img class="rounded-full border-4 border-white shadow" src="https://i.pravatar.cc/100?img=12" alt="">
+            <div class="flex flex-row mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-lg font-semibold my-2">Charlie.C</p>
+            <p class="text-center italic max-w-2xl">"In just a few weeks, I feel a LOT more confident navigating the React world. Chris has been an excellent mentor."</p>
+          </div>
+          
+          <!-- progress dots/bars for carousel -->
+          <div class="absolute flex flex-row bottom-0 gap-6"> 
+            <div class="h-2 w-5 rounded-full bg-purple-700 opacity-50 bottom-0 mb-2 cursor-pointer transition-all ease-in-out duration-500" id="dots" onclick="dotsShow(0)"></div>      
+            <div class="h-2 w-5 rounded-full bg-purple-700 opacity-50 bottom-0 mb-2 cursor-pointer transition-all ease-in-out duration-500" id="dots" onclick="dotsShow(1)"></div>
+            <div class="h-2 w-5 rounded-full bg-purple-700 opacity-50 bottom-0 mb-2 cursor-pointer transition-all ease-in-out duration-500" id="dots" onclick="dotsShow(2)"></div>
+        </div>
+      
+        <!-- Left/Right arrows for carousel -->
+          <svg  onclick="slideProgress(-1, 'leftArrow')" xmlns="http://www.w3.org/2000/svg" class="left_arrow cursor-pointer h-5 w-5 md:h-8 md:w-8 text-purple-500 absolute bottom-1/2 left-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+          </svg>
+          <svg onclick="slideProgress(1, 'rightArrow')" xmlns="http://www.w3.org/2000/svg" class="right_arrow cursor-pointer h-5 w-5 md:h-8 md:w-8 text-purple-500 absolute bottom-1/2 right-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </section>
+
+
+      <!-- Pricing Section -->
+      <section class="mt-10 md:mt-32">
+
+        <h1 class="text-center text-lg md:text-2xl" id="pricing_heading">Pricing</h1>
+
+        <div class="bg-purple-100 p-5 m-2 rounded-t-md border border-purple-200 shadow-sm">
+
+          <div class="grid gap-4 grid-flow-row lg:grid-flow-col place-content-center place-items-center">
+
+          <!-- Silver pricing card -->
+            <div class="w-72 bg-purple-50 shadow-sm rounded-md border-2 border-white flex flex-col items-center transform duration-500 hover:scale-105 hover:shadow-lg pricing_card" id="card1">
+            <img class="h-10 w-10" src="/silver.png" alt="Silver plan illustration">       
+              <h1 class="text-2xl text-center py-1 tracking-wider">Silver</h1>
+
+              <div class="price_tab bg-purple-100 py-3 px-4 my-1 border-2 border-purple-200 rounded-md flex items-center justify-center" >
+                <button id="silver_monthly_button" class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-l-md text-sm transition-all ease-in-out duration-500" onclick="pricing('sliverMonthly')">Monthly</button>
+                <button id="silver_yearly_button"  class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-r-md text-sm transition-all ease-in-out duration-500" onclick="pricing('sliverYearly')">Yearly</button>
+              </div>
+
+              
+              <h2 class="text-4xl text-center my-4 py-2 tracking-wide" id="#silver_price">$20.00</h2>
+
+              <ul class="mx-10 text-sm">
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Full Course Materials
+                </li>
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  10 Mentor Sessions
+                </li>
+              </ul>
+
+              <button class="px-3 py-2 w-1/2 rounded-md bg-purple-600 shadow-md text-white tracking-wide text-lg my-5 transform duration-500 hover:bg-purple-800 hover:shadow-xl ">Subscribe</button>
+
+            </div>
+          
+          <!-- Gold pricing card -->
+            <div class="w-72 bg-purple-50 shadow-lg rounded-md border-2 border-purple-500 flex flex-col items-center transform duration-500 hover:scale-105 hover:shadow-2xl pricing_card" id="card2" >
+              <div class="my-1 w-full text-center">★ Best Seller ★</div>
+              <img class="h-10 w-10" src="/gold.png" alt="Silver plan illustration">       
+              <h1 class="text-2xl text-center py-1 tracking-wider">Gold</h1>
+
+              <div class="price_tab bg-purple-100 py-3 px-4 my-1 border-2 border-purple-200 rounded-md flex items-center justify-center">
+                <button id="gold_monthly_button" class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-l-md text-sm transition-all ease-in-out duration-500" onclick="pricing('goldMonthly')">Monthly</button>
+                <button id="gold_yearly_button" class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-r-md text-sm transition-all ease-in-out duration-500" onclick="pricing('goldYearly')">Yearly</button>
+              </div>
+
+              <h2 class="text-4xl text-center my-4 py-2 tracking-wide" id="#gold_price">$49.00</h2>
+              
+              <ul class="mx-10 text-sm">
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Full Course Materials
+                </li>
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  50 Mentor Sessions
+                </li>
+              </ul>
+
+              <button class="px-3 py-2 w-1/2 rounded-md bg-purple-600 shadow-md text-white tracking-wide text-lg my-5 transform duration-500 hover:bg-purple-800 hover:shadow-xl">Subscribe</button>
+
+            </div>
+
+          <!-- Platinum pricing card -->
+            <div class="w-72 bg-purple-50 shadow-sm rounded-md border-2 border-white flex flex-col items-center transform duration-500 hover:scale-105 hover:shadow-lg pricing_card" id="card3">
+              <img class="h-10 w-10" src="/platinum.png" alt="Silver plan illustration">       
+              <h1 class="text-2xl text-center py-1 tracking-wider">Platinum</h1>
+
+              <div class="price_tab bg-purple-100 py-3 px-4 my-1 border-2 border-purple-200 rounded-md flex items-center justify-center">
+                <button id="plat_monthly_button" class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-l-md text-sm transition-all ease-in-out duration-500" onclick="pricing('platMonthly')">Monthly</button>
+                <button id="plat_yearly_button" class="bg-purple-500 opacity-50 text-white px-2 py-1 rounded-r-md text-sm transition-all ease-in-out duration-500" onclick="pricing('platYearly')">Yearly</button>
+              </div>
+
+              <h2 class="text-4xl text-center my-4 py-2 tracking-wide" id="#plat_price">$99.00</h2>
+              
+              <ul class="mx-10 text-sm">
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Full Course Materials
+                </li>
+                <li class="flex flex-row justify-start my-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  90 Mentor Sessions
+                </li>
+              </ul>
+
+              <button class="px-3 py-2 w-1/2 rounded-md bg-purple-600 shadow-md text-white tracking-wide text-lg my-5 transform duration-500 hover:bg-purple-800 hover:shadow-xl">Subscribe</button>
+
+            </div>
+    
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <footer class="bg-purple-400 w-full mt-10 md:mt-32" id="footer">
+        <div class="flex flex-row gap-2 justify-center items-center pt-5 ">
+            <div class="flex flex-col justify-between items-center  cursor-pointer fill-current text-purple-900 transform transition-all duration-500 ease-in-out hover:text-white p-1">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 9.333L15.333 11.995L10 14.667V9.333V9.333ZM24 5V19C24 21.761 21.762 24 19 24H5C2.239 24 0 21.761 0 19V5C0 2.239 2.239 0 5 0H19C21.762 0 24 2.239 24 5ZM20 12C19.98 7.877 19.677 6.3 17.077 6.123C14.674 5.959 9.323 5.96 6.924 6.123C4.326 6.3 4.02 7.87 4 12C4.02 16.123 4.323 17.7 6.923 17.877C9.322 18.04 14.673 18.041 17.076 17.877C19.674 17.7 19.98 16.13 20 12Z"/>
+              </svg>
+                <p>youtube</p>
+            </div>
+
+            <div class="flex flex-col justify-between items-center  cursor-pointer fill-current text-purple-900 transform transition-all duration-500 ease-in-out hover:text-white p-1">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 24H5C2.239 24 0 21.761 0 19V5C0 2.239 2.239 0 5 0H19C21.762 0 24 2.239 24 5V19C24 21.761 21.762 24 19 24ZM15.712 19.112L15.288 17.632L16.312 18.584L17.28 19.48L19 21V6.648C19 5.736 18.264 5 17.36 5H6.64C5.736 5 5 5.736 5 6.648V17.464C5 18.376 5.736 19.112 6.64 19.112H15.712V19.112ZM14.272 15.448C16.04 15.392 16.72 14.232 16.72 14.232C16.72 11.656 15.568 9.568 15.568 9.568C14.416 8.704 13.32 8.728 13.32 8.728L13.208 8.856C14.568 9.272 15.2 9.872 15.2 9.872C14.368 9.416 13.552 9.192 12.792 9.104C12.216 9.04 11.664 9.056 11.176 9.12L11.04 9.136C10.76 9.16 10.08 9.264 9.224 9.64L8.752 9.872C8.752 9.872 9.416 9.24 10.856 8.824L10.776 8.728C10.776 8.728 9.68 8.704 8.528 9.568C8.528 9.568 7.376 11.656 7.376 14.232C7.376 14.232 8.048 15.392 9.816 15.448L10.352 14.784C9.336 14.48 8.952 13.84 8.952 13.84L9.176 13.976L9.208 14L9.24 14.018L9.249 14.022L9.28 14.04C9.48 14.152 9.68 14.24 9.864 14.312C10.192 14.44 10.584 14.568 11.04 14.656C11.64 14.768 12.344 14.808 13.112 14.664C13.488 14.6 13.872 14.488 14.272 14.32C14.552 14.216 14.864 14.064 15.192 13.848C15.192 13.848 14.792 14.504 13.744 14.8L14.272 15.448V15.448ZM10.552 11.712C10.096 11.712 9.736 12.112 9.736 12.6C9.736 13.088 10.104 13.488 10.552 13.488C11.008 13.488 11.368 13.088 11.368 12.6C11.376 12.112 11.008 11.712 10.552 11.712ZM13.472 11.712C13.016 11.712 12.656 12.112 12.656 12.6C12.656 13.088 13.024 13.488 13.472 13.488C13.928 13.488 14.288 13.088 14.288 12.6C14.288 12.112 13.928 11.712 13.472 11.712Z" />
+                </svg>
+              <p>discord</p>
+          </div>
+
+          <div class="flex flex-col justify-between items-center  cursor-pointer fill-current text-purple-900 transform transition-all duration-500 ease-in-out hover:text-white p-1">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM16 7H14.076C13.461 7 13 7.252 13 7.889V9H16L15.762 12H13V20H10V12H8V9H10V7.077C10 5.055 11.064 4 13.461 4H16V7Z"/>
+              </svg>
+            <p>facebook</p>
+        </div>
+
+        <a href="https://github.com/raghusbhat" rel="noopener" target="_blank" class="flex flex-col justify-between items-center fill-current text-purple-900 transform transition-all duration-500 ease-in-out hover:text-white p-1">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM14.534 19.59C14.129 19.668 14 19.419 14 19.206V17.011C14 16.264 13.738 15.778 13.45 15.53C15.232 15.332 17.104 14.655 17.104 11.583C17.104 10.709 16.792 9.995 16.281 9.436C16.363 9.234 16.637 8.42 16.202 7.319C16.202 7.319 15.531 7.104 14.004 8.139C13.364 7.959 12.68 7.872 12 7.868C11.32 7.871 10.636 7.959 9.997 8.137C8.469 7.102 7.797 7.317 7.797 7.317C7.363 8.419 7.637 9.232 7.72 9.435C7.208 9.995 6.896 10.708 6.896 11.582C6.896 14.646 8.763 15.333 10.541 15.536C10.312 15.736 10.105 16.088 10.033 16.606C9.576 16.81 8.419 17.163 7.705 15.94C7.705 15.94 7.282 15.172 6.478 15.115C6.478 15.115 5.698 15.105 6.423 15.602C6.423 15.602 6.948 15.848 7.312 16.772C7.312 16.772 7.775 18.2 10 17.716V19.205C10 19.416 9.871 19.664 9.472 19.59C6.292 18.533 4 15.534 4 12C4 7.581 7.582 4 12 4C16.418 4 20 7.581 20 12C20 15.533 17.711 18.531 14.534 19.59V19.59Z"/>
+            </svg>
+          <p>github</p>
+      </a>
+        </div>
+
+        
+      <form class="flex flex-row gap-2 justify-center items-center pt-5 ">
+        <input class="rounded-sm h-10 text-center shadow placeholder-purple-300 italic focus:outline-none focus:ring-1 focus:ring-purple-800 focus:scale-105 transform" type="email" id="fname" name="fname" placeholder="Your Email"><br><br>
+        <input class="rounded-sm h-10 text-center shadow-lg bg-purple-700 px-3 py-2 text-white transform duration-500 hover:bg-purple-900 italic tracking-wide" type="submit" value="Subscribe">
+      </form>
+
+    
+
+      <hr class="mx-20 opacity-30 my-3 shadow">
+        <p class="text-purple-200 italic text-center pb-3 text-sm" >&copy <span id="#year">2020</span> Raghu Bhat | 
+          <a class="underline hover:text-purple-800" href="https://www.raghubhat.com/" rel="noopener" target="_blank">www.raghubhat.com</a>
+          |
+          <a class="underline hover:text-purple-800 " href="mailto:info@raghubhat.com" rel="noopener">info@raghubhat.com</a>
+        </p>
+      </footer>
+
+    </div>
+  </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+     <script defer src="https://unpkg.com/@dotlottie/player-component@1.0.0/dist/dotlottie-player.js"></script>
+     <script defer src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  background-image: url("/pattern.png");
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  #hero, #hreobg{
+  height: 40rem;
+  width: 40rem;
+}
+}
+
+.toggle-checkbox:checked {
+@apply: right-0 border-purple-400;
+right: 0;
+border-color: #9333EA;
+}
+.toggle-checkbox:checked + .toggle-label {
+@apply: bg-green-400;
+background-color: #9333EA;
+}
